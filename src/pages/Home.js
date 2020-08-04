@@ -14,7 +14,6 @@ class Home extends Component {
         .then(res => {
             this.setState({ bots: res.data });
         })
-
     }
 
     componentDidMount() {
@@ -37,7 +36,10 @@ class Home extends Component {
         return (
             <div>
                 {this.state.bots.length == 0 && (
-                    <h1>LOADING...</h1>
+                    <div class="loading">
+                        <h1>LOADING...</h1>
+                        <img src="https://i.pinimg.com/originals/51/77/40/5177402f9a223466db995ed7c25a6311.gif"></img>
+                    </div>
                 )}
 
                 {this.state.bots && this.state.bots.length !== 0 && (
