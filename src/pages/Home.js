@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { API_BASE } from './config.json';
 
 class Home extends Component {
 
@@ -9,7 +10,7 @@ class Home extends Component {
             bots: []
         }
 
-        axios.get("http://194.15.36.29:9999/api/status")
+        axios.get(API_BASE)
         .then(res => {
             //this.state.bots.push(res);
             this.setState({ bots: res.data });
