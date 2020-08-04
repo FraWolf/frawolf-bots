@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: myFirstFont;
-    src: url(https://cdn.discordapp.com/attachments/614792114613518358/739768077687717918/Aero_Matics_Regular.ttf);
+    src: url("../fonts/Aero.ttf");
  }
  
  * {
