@@ -38,7 +38,6 @@ class Home extends Component {
                 {this.state.bots.length == 0 && (
                     <div class="loading">
                         <h1>LOADING...</h1>
-                        <img src="https://i.pinimg.com/originals/51/77/40/5177402f9a223466db995ed7c25a6311.gif"></img>
                     </div>
                 )}
 
