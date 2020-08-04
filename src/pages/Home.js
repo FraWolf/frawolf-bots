@@ -12,11 +12,25 @@ class Home extends Component {
 
         axios.get(API_BASE)
         .then(res => {
-            //this.state.bots.push(res);
             this.setState({ bots: res.data });
-            console.log(res)
         })
 
+    }
+
+    componentDidMount() {
+        this.getData();
+        this.intervalID = setInterval(this.getData.bind(this), 5000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.intervalID);
+    }
+    
+    getData = () => {
+        axios.get(API_BASE)
+        .then(res => {
+            this.setState({ bots: res.data });
+        })
     }
 
     render() {
