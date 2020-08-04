@@ -1,0 +1,270 @@
+/* CSS files add styling rules to your content */
+/* CULO */
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(https://cdn.discordapp.com/attachments/614792114613518358/739768077687717918/Aero_Matics_Regular.ttf);
+ }
+ 
+ * {
+    font-family: myFirstFont;
+ }
+ 
+ body {
+   background-color: #454545;
+   display: inline-block;
+   user-select: none;
+ }
+ 
+ h1 {
+   color: white;
+ }
+ 
+ #header{
+   display: inline-block;
+   text-align: center;
+   width: 100%;
+   height: 100px;
+   background-color: #212121;
+   position: absolute;
+   top: 0;
+   left: 0;
+   overflow: hidden;
+ }
+ 
+ #sitename{
+   position: absolute;
+   top: 0.5px;
+   left: 50%;
+   transform: translate(-50%, 0);
+   pointer-events: none;
+   font-size: 40px;
+ }
+ 
+ #fralogo{
+   width: 92px;
+   height: 92px;
+   position: absolute;
+   top: 3.5px;
+   left: 50%;
+   opacity: 0.2;
+   transform: translate(-50%, 0);
+   pointer-events: none;
+ }
+ 
+ #fralogo-footer{
+   width: 140px;
+   height: 140px;
+   position: absolute;
+   top: -60%;
+   left: 50%;
+   opacity: 0.05;
+   transform: translate(-50%, 0);
+   pointer-events: none;
+ }
+ 
+ #rights{
+   position: absolute;
+   top: -5%;
+   left: 50%;
+   transform: translate(-50%, 0);
+   pointer-events: none;
+   font-size: 30px;
+ }
+ 
+ #footer{
+   display: inline-block;
+   text-align: center;
+   width: 100%;
+   height: 62px;
+   background-color: #212121;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   overflow: hidden;
+ }
+ 
+ #content{
+   width: 100%;
+   height: 70vh;
+   overflow-y: hidden;
+   overflow-x: hidden;
+   position: absolute;
+   top: 52%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+ }
+ 
+ .bot-container{
+   cursor: pointer;
+   width: 994px;
+   height: 61px;
+   background-image: Url("https://cdn.discordapp.com/attachments/289745750865346560/739466885409800192/Base.png");
+   display: inline-block;
+   line-height: 23px;
+   margin-bottom: 16px;
+   position: relative;
+ }
+ 
+ .bot-container-status-online{
+   width: 994px;
+   height: 61px;
+   background-image: Url("https://cdn.discordapp.com/attachments/289745750865346560/739466885409800192/Base.png");
+   pointer-events: none;
+   overflow: hidden;
+   display: inline-block;
+   line-height: 23px;
+   margin-bottom: 16px;
+   z-index: -1;
+   position: relative;
+   border-bottom: 3px solid #43B581;
+ }
+ 
+ .bot-container-status-offline{
+   width: 994px;
+   height: 61px;
+   background-image: Url("https://cdn.discordapp.com/attachments/289745750865346560/739466885409800192/Base.png");
+   pointer-events: none;
+   overflow: hidden;
+   display: inline-block;
+   line-height: 23px;
+   margin-bottom: 16px;
+   z-index: -1;
+   position: relative;
+   border-bottom: 3px solid #F04747;
+ }
+ 
+ .bot-container-status-away{
+   width: 994px;
+   height: 61px;
+   background-image: Url("https://cdn.discordapp.com/attachments/289745750865346560/739466885409800192/Base.png");
+   pointer-events: none;
+   overflow: hidden;
+   display: inline-block;
+   line-height: 23px;
+   margin-bottom: 16px;
+   z-index: -1;
+   position: relative;
+   border-bottom: 3px solid #FAA61A;
+ }
+ 
+ .name-container{
+   display: inline-block;
+   width: 300px;
+   height: 40px;
+   position: absolute;
+   top: 11px;
+   left: 115px;
+ }
+ 
+ .users-container{
+   display: inline-block;
+   width: 90px;
+   height: 40px;
+   position: absolute;
+   top: 11px;
+   left: 495px;
+ }
+ 
+ .servers-container{
+   isplay: inline-block;
+   width: 90px;
+   height: 40px;
+   position: absolute;
+   top: 11px;
+   left: 640px;
+ }
+ 
+ .shard-container{
+   display: inline-block;
+   width: 90px;
+   height: 40px;
+   position: absolute;
+   top: 11px;
+   left: 790px;
+ }
+ 
+ .expander{
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   top: 21px;
+   right: 12px;
+   text-align: center;
+   vertical-align: middle;
+   transform: rotate(0deg);
+ }
+ 
+ .animationin{
+   animation: 0.2s rotateexpanderin ease-in;
+   animation-fill-mode:forwards;
+ }
+ 
+ .animationout{
+   animation: 0.2s rotateexpanderout ease-in;
+   animation-fill-mode:forwards;
+ }
+ 
+ @keyframes rotateexpanderin{
+   from{transform: rotate(0deg);}
+   to{transform: rotate(90deg);}
+ }
+ 
+ @keyframes rotateexpanderout{
+   from{transform: rotate(90deg);}
+   to{transform: rotate(0deg);}
+ }
+ 
+ 
+ 
+ 
+ 
+ .status-online{
+   width: 18px;
+   height: 18px;
+   border: none;
+   border-radius: 50px;
+   background-color: #43B581;
+   display: inline-block;
+   float: left;
+   margin-top: 10.5px;
+ }
+ 
+ .status-offline{
+   width: 18px;
+   height: 18px;
+   border: none;
+   border-radius: 50px;
+   background-color: #F04747;
+   display: inline-block;
+   float: left;
+   margin-top: 10.5px;
+ }
+ 
+ .status-away{
+   width: 18px;
+   height: 18px;
+   border: none;
+   border-radius: 50px;
+   background-color: #FAA61A;
+   display: inline-block;
+   float: left;
+   margin-top: 10.5px;
+ }
+ 
+ .botname{
+   margin-left: 12px;
+   margin-top: 7.5px;
+   display: inline-block;
+   float: left;
+   font-size: 25px;
+ }
+ 
+ .entry{
+   margin-top: 7.5px;
+   display: inline-block;
+   float: left;
+   font-size: 25px;
+ }
