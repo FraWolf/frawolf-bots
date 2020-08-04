@@ -1,6 +1,6 @@
 {
-  "name": "test-temtemitalia",
-  "version": "1.0.0",
+  "name": "frawolf-bots",
+  "version": "1.4.2",
   "description": "",
   "keywords": [],
   "main": "index.js",
@@ -17,6 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build-net": "CI= react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "netlify deploy"
